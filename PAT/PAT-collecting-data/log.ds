@@ -1,0 +1,802 @@
+start time:2018/02/06 16:49:52
+filename,status,time,rows
+start time:2018/02/06 16:49:52
+filename,status,time,rows
+start time:2018/02/06 16:49:52
+filename,status,time,rows
+start time:2018/02/06 16:49:52
+filename,status,time,rows
+start time:2018/02/06 16:49:52
+filename,status,time,rows
+start time:2018/02/06 16:49:52
+filename,status,time,rows
+start time:2018/02/06 16:49:52
+filename,status,time,rows
+start time:2018/02/06 16:49:52
+filename,status,time,rows
+start time:2018/02/06 16:49:52
+filename,status,time,rows
+query12.sql.5,success,58,
+query12.sql.5,success,58,100
+end time:2018/02/06 16:50:50
+query12.sql.7,success,118,
+query12.sql.7,success,118,100
+end time:2018/02/06 16:51:50
+query12.sql.2,success,118,
+query12.sql.2,success,118,100
+end time:2018/02/06 16:51:50
+query12.sql.1,success,124,
+query12.sql.1,success,124,100
+end time:2018/02/06 16:51:56
+query12.sql.3,success,131,
+query12.sql.3,success,131,100
+end time:2018/02/06 16:52:03
+query12.sql.6,success,137,
+query12.sql.6,success,137,100
+end time:2018/02/06 16:52:09
+query12.sql.4,success,141,
+query12.sql.4,success,141,100
+end time:2018/02/06 16:52:13
+query12.sql.8,success,149,
+query12.sql.8,success,149,100
+end time:2018/02/06 16:52:21
+query12.sql.0,success,151,
+query12.sql.0,success,151,100
+end time:2018/02/06 16:52:23
+start time:2018/02/06 16:53:38
+filename,status,time,rows
+start time:2018/02/06 16:53:38
+filename,status,time,rows
+start time:2018/02/06 16:53:38
+filename,status,time,rows
+start time:2018/02/06 16:53:38
+filename,status,time,rows
+start time:2018/02/06 16:53:38
+filename,status,time,rows
+start time:2018/02/06 16:53:38
+filename,status,time,rows
+start time:2018/02/06 16:53:38
+filename,status,time,rows
+start time:2018/02/06 16:53:38
+filename,status,time,rows
+start time:2018/02/06 16:53:38
+filename,status,time,rows
+query12.sql.6,success,58,
+query12.sql.6,success,58,100
+end time:2018/02/06 16:54:36
+query12.sql.4,success,116,
+query12.sql.4,success,116,100
+end time:2018/02/06 16:55:34
+query12.sql.0,success,126,
+query12.sql.0,success,126,100
+end time:2018/02/06 16:55:44
+query12.sql.3,success,134,
+query12.sql.3,success,134,100
+end time:2018/02/06 16:55:52
+query12.sql.7,success,137,
+query12.sql.7,success,137,100
+end time:2018/02/06 16:55:55
+query12.sql.5,success,140,
+query12.sql.5,success,140,100
+end time:2018/02/06 16:55:58
+query12.sql.1,success,143,
+query12.sql.1,success,143,100
+end time:2018/02/06 16:56:01
+query12.sql.2,success,145,
+query12.sql.2,success,145,100
+end time:2018/02/06 16:56:03
+query12.sql.8,success,153,
+query12.sql.8,success,153,100
+end time:2018/02/06 16:56:11
+start time:2018/02/07 13:58:09
+filename,status,time,rows
+start time:2018/02/07 13:58:09
+filename,status,time,rows
+start time:2018/02/07 13:58:09
+filename,status,time,rows
+start time:2018/02/07 13:58:09
+filename,status,time,rows
+start time:2018/02/07 13:58:09
+filename,status,time,rows
+start time:2018/02/07 13:58:09
+filename,status,time,rows
+start time:2018/02/07 13:58:09
+filename,status,time,rows
+start time:2018/02/07 13:58:09
+filename,status,time,rows
+start time:2018/02/07 13:58:09
+filename,status,time,rows
+query12.sql.8,success,60,
+query12.sql.8,success,60,100
+end time:2018/02/07 13:59:09
+query12.sql.4,success,111,
+query12.sql.4,success,111,100
+end time:2018/02/07 14:00:00
+query12.sql.0,success,133,
+query12.sql.0,success,133,100
+end time:2018/02/07 14:00:22
+query12.sql.3,success,133,
+query12.sql.3,success,133,100
+end time:2018/02/07 14:00:22
+query12.sql.7,success,151,
+query12.sql.7,success,151,100
+end time:2018/02/07 14:00:40
+query12.sql.5,success,152,
+query12.sql.5,success,152,100
+end time:2018/02/07 14:00:41
+query12.sql.6,success,153,
+query12.sql.6,success,153,100
+end time:2018/02/07 14:00:42
+query12.sql.1,success,154,
+query12.sql.1,success,154,100
+end time:2018/02/07 14:00:43
+query12.sql.2,success,155,
+query12.sql.2,success,155,100
+end time:2018/02/07 14:00:44
+start time:2018/02/07 14:09:10
+filename,status,time,rows
+start time:2018/02/07 14:09:10
+filename,status,time,rows
+start time:2018/02/07 14:09:10
+filename,status,time,rows
+start time:2018/02/07 14:09:10
+filename,status,time,rows
+start time:2018/02/07 14:09:10
+filename,status,time,rows
+start time:2018/02/07 14:09:10
+filename,status,time,rows
+start time:2018/02/07 14:09:10
+filename,status,time,rows
+start time:2018/02/07 14:09:10
+filename,status,time,rows
+start time:2018/02/07 14:09:10
+filename,status,time,rows
+query12.sql.1,success,61,
+query12.sql.1,success,61,100
+end time:2018/02/07 14:10:11
+query12.sql.3,success,101,
+query12.sql.3,success,101,100
+end time:2018/02/07 14:10:51
+query12.sql.4,success,124,
+query12.sql.4,success,124,100
+end time:2018/02/07 14:11:14
+query12.sql.7,success,142,
+query12.sql.7,success,142,100
+end time:2018/02/07 14:11:32
+query12.sql.0,success,146,
+query12.sql.0,success,146,100
+end time:2018/02/07 14:11:36
+query12.sql.6,success,148,
+query12.sql.6,success,148,100
+end time:2018/02/07 14:11:38
+query12.sql.5,success,149,
+query12.sql.5,success,149,100
+end time:2018/02/07 14:11:39
+query12.sql.8,success,162,
+query12.sql.8,success,162,100
+end time:2018/02/07 14:11:52
+query12.sql.2,success,162,
+query12.sql.2,success,162,100
+end time:2018/02/07 14:11:52
+start time:2018/02/07 14:23:18
+filename,status,time,rows
+start time:2018/02/07 14:23:18
+filename,status,time,rows
+start time:2018/02/07 14:23:18
+filename,status,time,rows
+start time:2018/02/07 14:23:18
+filename,status,time,rows
+start time:2018/02/07 14:23:18
+filename,status,time,rows
+start time:2018/02/07 14:23:18
+filename,status,time,rows
+start time:2018/02/07 14:23:18
+filename,status,time,rows
+start time:2018/02/07 14:23:18
+filename,status,time,rows
+start time:2018/02/07 14:23:18
+filename,status,time,rows
+query12.sql.3,success,60,
+query12.sql.3,success,60,100
+end time:2018/02/07 14:24:18
+query12.sql.1,success,116,
+query12.sql.1,success,116,100
+end time:2018/02/07 14:25:14
+query12.sql.8,success,118,
+query12.sql.8,success,118,100
+end time:2018/02/07 14:25:16
+query12.sql.6,success,120,
+query12.sql.6,success,120,100
+end time:2018/02/07 14:25:18
+query12.sql.4,success,121,
+query12.sql.4,success,121,100
+end time:2018/02/07 14:25:19
+query12.sql.7,success,141,
+query12.sql.7,success,141,100
+end time:2018/02/07 14:25:39
+query12.sql.0,success,143,
+query12.sql.0,success,143,100
+end time:2018/02/07 14:25:41
+query12.sql.2,success,162,
+query12.sql.2,success,162,100
+end time:2018/02/07 14:26:00
+query12.sql.5,success,164,
+query12.sql.5,success,164,100
+end time:2018/02/07 14:26:02
+start time:2018/02/07 14:46:30
+filename,status,time,rows
+start time:2018/02/07 14:46:30
+filename,status,time,rows
+query12.sql.0,success,57,
+query12.sql.0,success,57,100
+end time:2018/02/07 14:47:27
+query12.sql.1,success,112,
+query12.sql.1,success,112,100
+end time:2018/02/07 14:48:22
+start time:2018/02/08 14:52:33
+filename,status,time,rows
+start time:2018/02/08 14:52:33
+filename,status,time,rows
+start time:2018/02/08 14:52:33
+filename,status,time,rows
+start time:2018/02/08 14:52:33
+filename,status,time,rows
+start time:2018/02/08 14:52:33
+filename,status,time,rows
+start time:2018/02/08 14:52:33
+filename,status,time,rows
+start time:2018/02/08 14:52:33
+filename,status,time,rows
+start time:2018/02/08 14:52:33
+filename,status,time,rows
+start time:2018/02/08 14:52:33
+filename,status,time,rows
+query63.sql.5,success,64,
+query63.sql.5,success,64,100
+query43.sql.2,success,123,
+query43.sql.2,success,123,100
+query55.sql.4,success,130,
+query55.sql.4,success,130,100
+query42.sql.1,success,148,
+query42.sql.1,success,148,13
+query52.sql.3,success,166,
+query52.sql.3,success,166,100
+query19.sql.0,success,169,
+query19.sql.0,success,169,100
+query73.sql.7,success,182,
+query73.sql.7,success,182,918
+query68.sql.6,success,218,
+query68.sql.6,success,218,
+query98.sql.8,success,228,
+query98.sql.8,success,228,53893
+query98.sql.7,success,97,
+query98.sql.7,success,97,53893
+query68.sql.5,success,222,
+query68.sql.5,success,222,
+query52.sql.2,success,183,
+query52.sql.2,success,183,100
+query63.sql.4,success,200,
+query63.sql.4,success,200,100
+query43.sql.1,success,201,
+query43.sql.1,success,201,100
+query55.sql.3,success,200,
+query55.sql.3,success,200,100
+query42.sql.0,success,200,
+query42.sql.0,success,200,13
+query68.sql.4,success,96,
+query68.sql.4,success,96,
+query73.sql.6,success,241,
+query73.sql.6,success,241,918
+query52.sql.1,success,136,
+query52.sql.1,success,136,100
+query19.sql.8,success,270,
+query19.sql.8,success,270,100
+query19.sql.7,success,256,
+query19.sql.7,success,256,100
+query73.sql.5,success,264,
+query73.sql.5,success,264,918
+query55.sql.2,success,247,
+query55.sql.2,success,247,100
+query43.sql.0,success,234,
+query43.sql.0,success,234,100
+query42.sql.8,success,112,
+query42.sql.8,success,112,13
+query55.sql.1,success,126,
+query55.sql.1,success,126,100
+query63.sql.3,success,254,
+query63.sql.3,success,254,100
+query73.sql.4,success,198,
+query73.sql.4,success,198,918
+query98.sql.6,success,195,
+query98.sql.6,success,195,53893
+query42.sql.7,success,144,
+query42.sql.7,success,144,13
+query52.sql.0,success,97,
+query52.sql.0,success,97,100
+query98.sql.5,success,177,
+query98.sql.5,success,177,53893
+query63.sql.2,success,199,
+query63.sql.2,success,199,100
+query43.sql.8,success,164,
+query43.sql.8,success,164,100
+query55.sql.0,success,90,
+query55.sql.0,success,90,100
+query63.sql.1,success,209,
+query63.sql.1,success,209,100
+query43.sql.7,success,178,
+query43.sql.7,success,178,100
+query68.sql.3,success,244,
+query68.sql.3,success,244,
+query98.sql.4,success,274,
+query98.sql.4,success,274,53893
+query19.sql.6,success,273,
+query19.sql.6,success,273,100
+query73.sql.3,success,88,
+query73.sql.3,success,88,918
+query19.sql.5,success,260,
+query19.sql.5,success,260,100
+query52.sql.7,success,172,
+query52.sql.7,success,172,100
+query68.sql.2,success,283,
+query68.sql.2,success,283,
+query63.sql.0,success,251,
+query63.sql.0,success,251,100
+query52.sql.8,success,282,
+query52.sql.8,success,282,100
+query68.sql.1,success,258,
+query68.sql.1,success,258,
+query19.sql.4,success,218,
+query19.sql.4,success,218,100
+query55.sql.7,success,90,
+query55.sql.7,success,90,100
+query42.sql.6,success,209,
+query42.sql.6,success,209,13
+query98.sql.3,success,212,
+query98.sql.3,success,212,53893
+query42.sql.5,success,195,
+query42.sql.5,success,195,13
+query43.sql.6,success,83,
+query43.sql.6,success,83,100
+query73.sql.2,success,188,
+query73.sql.2,success,188,918
+query68.sql.0,success,232,
+query68.sql.0,success,232,
+query55.sql.8,success,239,
+query55.sql.8,success,239,100
+query42.sql.4,success,200,
+query42.sql.4,success,200,13
+query73.sql.1,success,251,
+query73.sql.1,success,251,918
+query63.sql.7,success,217,
+query63.sql.7,success,217,100
+query52.sql.6,success,140,
+query52.sql.6,success,140,100
+query19.sql.3,success,236,
+query19.sql.3,success,236,100
+query63.sql.8,success,120,
+query63.sql.8,success,120,100
+query43.sql.5,success,236,
+query43.sql.5,success,236,100
+query98.sql.2,success,230,
+query98.sql.2,success,230,53893
+query73.sql.0,success,220,
+query73.sql.0,success,220,918
+query43.sql.4,success,198,
+query43.sql.4,success,198,100
+query68.sql.8,success,152,
+query68.sql.8,success,152,
+query98.sql.1,success,242,
+query98.sql.1,success,242,53893
+query42.sql.3,success,179,
+query42.sql.3,success,179,13
+query55.sql.6,success,228,
+query55.sql.6,success,228,100
+query68.sql.7,success,286,
+query68.sql.7,success,286,
+end time:2018/02/08 15:19:35
+query52.sql.5,success,220,
+query52.sql.5,success,220,100
+query63.sql.6,success,83,
+query63.sql.6,success,83,100
+end time:2018/02/08 15:20:23
+query52.sql.4,success,160,
+query52.sql.4,success,160,100
+end time:2018/02/08 15:20:27
+query19.sql.2,success,261,
+query19.sql.2,success,261,100
+query43.sql.3,success,147,
+query43.sql.3,success,147,100
+end time:2018/02/08 15:21:19
+query73.sql.8,success,171,
+query73.sql.8,success,171,918
+end time:2018/02/08 15:21:31
+query98.sql.0,success,263,
+query98.sql.0,success,263,53893
+end time:2018/02/08 15:21:49
+query19.sql.1,success,219,
+query19.sql.1,success,219,100
+end time:2018/02/08 15:22:23
+query55.sql.5,success,171,
+query55.sql.5,success,171,100
+end time:2018/02/08 15:22:42
+query42.sql.2,success,104,
+query42.sql.2,success,104,13
+end time:2018/02/08 15:22:51
+start time:2018/02/08 16:14:36
+filename,status,time,rows
+start time:2018/02/08 16:14:36
+filename,status,time,rows
+start time:2018/02/08 16:14:36
+filename,status,time,rows
+start time:2018/02/08 16:14:36
+filename,status,time,rows
+start time:2018/02/08 16:14:36
+filename,status,time,rows
+start time:2018/02/08 16:14:36
+filename,status,time,rows
+start time:2018/02/08 16:14:36
+filename,status,time,rows
+start time:2018/02/08 16:14:36
+filename,status,time,rows
+start time:2018/02/08 16:14:36
+filename,status,time,rows
+query42.sql.1,success1111,62,
+query42.sql.1,success,62,13
+query43.sql.2,success1111,131,
+query43.sql.2,success,131,100
+query55.sql.4,success1111,140,
+query55.sql.4,success,140,100
+query63.sql.5,success1111,144,
+query63.sql.5,success,144,100
+query73.sql.7,success1111,145,
+query73.sql.7,success,145,918
+query52.sql.3,success1111,164,
+query52.sql.3,success,164,100
+query98.sql.8,success1111,173,
+query98.sql.8,success,173,53893
+query19.sql.0,success1111,212,
+query19.sql.0,success,212,100
+query68.sql.6,success1111,219,
+query68.sql.6,success1111,219,
+query19.sql.8,success1111,98,
+query19.sql.8,success,98,100
+query43.sql.1,success1111,231,
+query43.sql.1,success,231,100
+query55.sql.3,success1111,137,
+query55.sql.3,success,137,100
+query52.sql.2,success1111,179,
+query52.sql.2,success,179,100
+query63.sql.4,success1111,191,
+query63.sql.4,success,191,100
+query68.sql.5,success1111,208,
+query68.sql.5,success1111,208,
+query98.sql.7,success1111,220,
+query98.sql.7,success,220,53893
+query42.sql.8,success1111,136,
+query42.sql.8,success,136,13
+query68.sql.4,success1111,106,
+query68.sql.4,success1111,106,
+query42.sql.0,success1111,226,
+query42.sql.0,success,226,13
+query52.sql.1,success1111,163,
+query52.sql.1,success,163,100
+query55.sql.2,success1111,158,
+query55.sql.2,success,158,100
+query73.sql.6,success1111,253,
+query73.sql.6,success,253,918
+query63.sql.3,success1111,190,
+query63.sql.3,success,190,100
+query73.sql.4,success1111,86,
+query73.sql.4,success,86,918
+query73.sql.5,success1111,202,
+query73.sql.5,success,202,918
+query19.sql.7,success1111,200,
+query19.sql.7,success,200,100
+query55.sql.1,success1111,117,
+query55.sql.1,success,117,100
+query43.sql.8,success1111,176,
+query43.sql.8,success,176,100
+query43.sql.0,success1111,163,
+query43.sql.0,success,163,100
+query42.sql.7,success1111,98,
+query42.sql.7,success,98,13
+query63.sql.2,success1111,223,
+query63.sql.2,success,223,100
+query98.sql.6,success1111,248,
+query98.sql.6,success,248,53893
+query68.sql.3,success1111,246,
+query68.sql.3,success1111,246,
+query98.sql.4,success1111,238,
+query98.sql.4,success,238,53893
+query98.sql.5,success1111,207,
+query98.sql.5,success,207,53893
+query63.sql.1,success1111,215,
+query63.sql.1,success,215,100
+query52.sql.8,success1111,229,
+query52.sql.8,success,229,100
+query52.sql.0,success1111,233,
+query52.sql.0,success,233,100
+query19.sql.6,success1111,131,
+query19.sql.6,success,131,100
+query43.sql.7,success1111,192,
+query43.sql.7,success,192,100
+query68.sql.2,success1111,215,
+query68.sql.2,success1111,215,
+query55.sql.8,success1111,160,
+query55.sql.8,success,160,100
+query42.sql.6,success1111,136,
+query42.sql.6,success,136,13
+query55.sql.0,success1111,161,
+query55.sql.0,success,161,100
+query73.sql.3,success1111,271,
+query73.sql.3,success,271,918
+query52.sql.7,success1111,154,
+query52.sql.7,success,154,100
+query19.sql.4,success1111,276,
+query19.sql.4,success,276,100
+query19.sql.5,success1111,285,
+query19.sql.5,success,285,100
+query68.sql.1,success1111,272,
+query68.sql.1,success1111,272,
+query98.sql.3,success1111,86,
+query98.sql.3,success,86,53893
+query73.sql.2,success1111,218,
+query73.sql.2,success,218,918
+query63.sql.8,success1111,155,
+query63.sql.8,success,155,100
+query43.sql.6,success1111,158,
+query43.sql.6,success,158,100
+query63.sql.0,success1111,171,
+query63.sql.0,success,171,100
+query55.sql.7,success1111,183,
+query55.sql.7,success,183,100
+query42.sql.4,success1111,179,
+query42.sql.4,success,179,13
+query42.sql.5,success1111,192,
+query42.sql.5,success,192,13
+query98.sql.2,success1111,137,
+query98.sql.2,success,137,53893
+query73.sql.1,success1111,212,
+query73.sql.1,success,212,918
+query19.sql.3,success1111,212,
+query19.sql.3,success,212,100
+query68.sql.8,success1111,230,
+query68.sql.8,success1111,230,
+query52.sql.6,success1111,236,
+query52.sql.6,success,236,100
+query68.sql.0,success1111,263,
+query68.sql.0,success1111,263,
+query63.sql.7,success1111,260,
+query63.sql.7,success,260,100
+query43.sql.4,success1111,245,
+query43.sql.4,success,245,100
+query43.sql.5,success1111,234,
+query43.sql.5,success,234,100
+query42.sql.3,success1111,219,
+query42.sql.3,success,219,13
+query73.sql.0,success1111,108,
+query73.sql.0,success,108,918
+query73.sql.8,success1111,190,
+query73.sql.8,success,190,918
+end time:2018/02/08 16:40:23
+query19.sql.2,success1111,294,
+query19.sql.2,success,294,100
+query98.sql.1,success1111,305,
+query98.sql.1,success,305,53893
+query55.sql.6,success1111,198,
+query55.sql.6,success,198,100
+query42.sql.2,success1111,58,
+query42.sql.2,success,58,13
+end time:2018/02/08 16:41:29
+query68.sql.7,success1111,212,
+query68.sql.7,success1111,212,
+end time:2018/02/08 16:42:20
+query52.sql.4,success1111,223,
+query52.sql.4,success,223,100
+end time:2018/02/08 16:42:40
+query43.sql.3,success1111,171,
+query43.sql.3,success,171,100
+end time:2018/02/08 16:42:52
+query52.sql.5,success1111,232,
+query52.sql.5,success,232,100
+query98.sql.0,success1111,200,
+query98.sql.0,success,200,53893
+end time:2018/02/08 16:43:33
+query55.sql.5,success1111,65,
+query55.sql.5,success,65,100
+end time:2018/02/08 16:44:05
+query19.sql.1,success1111,234,
+query19.sql.1,success,234,100
+end time:2018/02/08 16:44:47
+query63.sql.6,success1111,255,
+query63.sql.6,success,255,100
+end time:2018/02/08 16:45:10
+start time:2018/02/09 12:48:58
+filename,status,time,rows
+start time:2018/02/09 12:48:58
+filename,status,time,rows
+start time:2018/02/09 12:48:58
+filename,status,time,rows
+start time:2018/02/09 12:48:58
+filename,status,time,rows
+start time:2018/02/09 12:48:58
+filename,status,time,rows
+start time:2018/02/09 12:48:58
+filename,status,time,rows
+start time:2018/02/09 12:48:58
+filename,status,time,rows
+start time:2018/02/09 12:48:58
+filename,status,time,rows
+start time:2018/02/09 12:48:58
+filename,status,time,rows
+query52.sql.3,success1111,56,
+query52.sql.3,success,56,100
+query43.sql.2,success1111,112,
+query43.sql.2,success,112,100
+query55.sql.4,success1111,128,
+query55.sql.4,success,128,100
+query42.sql.1,success1111,133,
+query42.sql.1,success,133,13
+query73.sql.7,success1111,152,
+query73.sql.7,success,152,918
+query63.sql.5,success1111,187,
+query63.sql.5,success,187,100
+query19.sql.0,success1111,205,
+query19.sql.0,success,205,100
+query68.sql.6,success1111,212,
+query68.sql.6,success1111,212,
+query98.sql.8,success1111,223,
+query98.sql.8,success,223,53893
+query55.sql.3,success1111,189,
+query55.sql.3,success,189,100
+query52.sql.2,success1111,135,
+query52.sql.2,success,135,100
+query63.sql.4,success1111,143,
+query63.sql.4,success,143,100
+query43.sql.1,success1111,161,
+query43.sql.1,success,161,100
+query98.sql.7,success1111,178,
+query98.sql.7,success,178,53893
+query52.sql.1,success1111,72,
+query52.sql.1,success,72,100
+query68.sql.5,success1111,236,
+query68.sql.5,success1111,236,
+query55.sql.2,success1111,177,
+query55.sql.2,success,177,100
+query42.sql.0,success1111,226,
+query42.sql.0,success,226,13
+query73.sql.6,success1111,245,
+query73.sql.6,success,245,918
+query19.sql.8,success1111,245,
+query19.sql.8,success,245,100
+query63.sql.3,success1111,232,
+query63.sql.3,success,232,100
+query68.sql.4,success1111,236,
+query68.sql.4,success1111,236,
+query43.sql.0,success1111,78,
+query43.sql.0,success,78,100
+query19.sql.7,success1111,217,
+query19.sql.7,success,217,100
+query55.sql.1,success1111,202,
+query55.sql.1,success,202,100
+query98.sql.6,success1111,144,
+query98.sql.6,success,144,53893
+query73.sql.5,success1111,179,
+query73.sql.5,success,179,918
+query63.sql.2,success1111,200,
+query63.sql.2,success,200,100
+query73.sql.4,success1111,178,
+query73.sql.4,success,178,918
+query52.sql.0,success1111,177,
+query52.sql.0,success,177,100
+query42.sql.8,success1111,219,
+query42.sql.8,success,219,13
+query19.sql.6,success1111,102,
+query19.sql.6,success,102,100
+query42.sql.7,success1111,176,
+query42.sql.7,success,176,13
+query68.sql.3,success1111,257,
+query68.sql.3,success1111,257,
+query63.sql.1,success1111,174,
+query63.sql.1,success,174,100
+query42.sql.6,success1111,74,
+query42.sql.6,success,74,13
+query98.sql.5,success1111,208,
+query98.sql.5,success,208,53893
+query98.sql.4,success1111,164,
+query98.sql.4,success,164,53893
+query55.sql.0,success1111,182,
+query55.sql.0,success,182,100
+query68.sql.2,success1111,245,
+query68.sql.2,success1111,245,
+query43.sql.8,success1111,198,
+query43.sql.8,success,198,100
+query43.sql.6,success1111,158,
+query43.sql.6,success,158,100
+query43.sql.7,success1111,217,
+query43.sql.7,success,217,100
+query19.sql.4,success1111,105,
+query19.sql.4,success,105,100
+query73.sql.3,success1111,239,
+query73.sql.3,success,239,918
+query68.sql.1,success1111,255,
+query68.sql.1,success1111,255,
+query19.sql.5,success1111,203,
+query19.sql.5,success,203,100
+query73.sql.2,success1111,201,
+query73.sql.2,success,201,918
+query98.sql.3,success1111,109,
+query98.sql.3,success,109,53893
+query63.sql.0,success1111,216,
+query63.sql.0,success,216,100
+query52.sql.8,success1111,215,
+query52.sql.8,success,215,100
+query52.sql.6,success1111,169,
+query52.sql.6,success,169,100
+query52.sql.7,success1111,184,
+query52.sql.7,success,184,100
+query42.sql.4,success1111,192,
+query42.sql.4,success,192,13
+query73.sql.1,success1111,192,
+query73.sql.1,success,192,918
+query55.sql.8,success1111,93,
+query55.sql.8,success,93,100
+query68.sql.0,success1111,113,
+query68.sql.0,success1111,113,
+query42.sql.5,success1111,202,
+query42.sql.5,success,202,13
+query98.sql.2,success1111,179,
+query98.sql.2,success,179,53893
+query19.sql.3,success1111,205,
+query19.sql.3,success,205,100
+query55.sql.6,success1111,204,
+query55.sql.6,success,204,100
+query55.sql.7,success1111,206,
+query55.sql.7,success,206,100
+query43.sql.4,success1111,205,
+query43.sql.4,success,205,100
+query98.sql.1,success1111,198,
+query98.sql.1,success,198,53893
+query63.sql.8,success1111,220,
+query63.sql.8,success,220,100
+query43.sql.5,success1111,221,
+query43.sql.5,success,221,100
+query73.sql.0,success1111,250,
+query73.sql.0,success,250,918
+query68.sql.8,success1111,99,
+query68.sql.8,success1111,99,
+query19.sql.2,success1111,303,
+query19.sql.2,success,303,100
+query42.sql.3,success1111,268,
+query42.sql.3,success,268,13
+query52.sql.4,success1111,205,
+query52.sql.4,success,205,100
+end time:2018/02/09 13:14:54
+query63.sql.6,success1111,266,
+query63.sql.6,success,266,100
+end time:2018/02/09 13:15:12
+query63.sql.7,success1111,245,
+query63.sql.7,success,245,100
+query19.sql.1,success1111,225,
+query19.sql.1,success,225,100
+end time:2018/02/09 13:15:50
+query52.sql.5,success1111,199,
+query52.sql.5,success,199,100
+query42.sql.2,success1111,114,
+query42.sql.2,success,114,13
+end time:2018/02/09 13:16:44
+query98.sql.0,success1111,228,
+query98.sql.0,success,228,53893
+end time:2018/02/09 13:16:53
+query73.sql.8,success1111,194,
+query73.sql.8,success,194,918
+end time:2018/02/09 13:17:24
+query43.sql.3,success1111,173,
+query43.sql.3,success,173,100
+end time:2018/02/09 13:17:46
+query55.sql.5,success1111,144,
+query55.sql.5,success,144,100
+end time:2018/02/09 13:18:37
+query68.sql.7,success1111,207,
+query68.sql.7,success1111,207,
+end time:2018/02/09 13:18:40
