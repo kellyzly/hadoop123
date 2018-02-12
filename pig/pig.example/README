@@ -1,0 +1,9 @@
+#how to debug pig in spark local mode?
+pig is launched by hadoop, so export pig_suspend="n" and export pig_suspend="y" in $HADOOP_HOME/bin/hadoop
+```js
+
+ elif [ "$COMMAND" = "jar" ] ; then
+ if [ "$pig_suspend" == "y" ];then
+   HADOOP_OPTS="$HADOOP_OPTS -Xrunjdwp:transport=dt_socket,server=y,address=9999"
+  fi  
+```
