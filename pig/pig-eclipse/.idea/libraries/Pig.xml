@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Pig">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/build/ivy/lib/Pig" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/build/ivy/lib/Pig" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/build/ivy/lib/Pig" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/build/ivy/lib/Pig" recursive="false" type="SOURCES" />
+  </library>
+</component>
