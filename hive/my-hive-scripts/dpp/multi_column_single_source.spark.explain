@@ -1,0 +1,541 @@
+
+2017-05-17T10:13:52,186  INFO [e9d807dd-3c62-4178-98d2-b2d4682eed5f main] ql.Driver: EXPLAIN output for queryid root_20170517101327_3661cfa0-395e-4941-93cf-5ec7ba22a9e1 : STAGE DEPENDENCIES:
+  Stage-2 is a root stage [MAPRED]
+  Stage-1 depends on stages: Stage-2 [MAPRED]
+  Stage-0 depends on stages: Stage-1 [FETCH]
+
+STAGE PLANS:
+  Stage: Stage-2
+    Spark
+      DagName: root_20170517101327_3661cfa0-395e-4941-93cf-5ec7ba22a9e1:2
+      Vertices:
+        Map 5 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart_date_hour
+                  Statistics: Num rows: 4 Data size: 108 Basic stats: COMPLETE Column stats: NONE
+                  GatherStats: false
+                  Filter Operator
+                    isSamplingPred: false
+                    predicate: (ds is not null and hr is not null and (date = '2008-04-08') and (hour = 11)) (type: boolean)
+                    Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                    Select Operator
+                      expressions: ds (type: string)
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                      Group By Operator
+                        keys: _col0 (type: string)
+                        mode: hash
+                        outputColumnNames: _col0
+                        Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                        Spark Partition Pruning Sink Operator
+                          partition key expr: ds
+                          tmp Path: hdfs://bdpe41:8020/tmp/hive/root/e9d807dd-3c62-4178-98d2-b2d4682eed5f/hive_2017-05-17_10-13-27_338_6217531020120527118-1/-mr-10004/1/5
+                          Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                          target column name: ds
+                          target work: Map 1
+            Path -> Alias:
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour [srcpart_date_hour]
+            Path -> Partition:
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour 
+                Partition
+                  base file name: srcpart_date_hour
+                  input format: org.apache.hadoop.mapred.TextInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                  properties:
+                    COLUMN_STATS_ACCURATE {"BASIC_STATS":"true"}
+                    bucket_count -1
+                    column.name.delimiter ,
+                    columns ds,date,hr,hour
+                    columns.comments 
+                    columns.types string:string:string:string
+                    file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                    file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    location hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour
+                    name default.srcpart_date_hour
+                    numFiles 8
+                    numRows 4
+                    rawDataSize 108
+                    serialization.ddl struct srcpart_date_hour { string ds, string date, string hr, string hour}
+                    serialization.format 1
+                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    totalSize 112
+                    transient_lastDdlTime 1494987183
+                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                
+                    input format: org.apache.hadoop.mapred.TextInputFormat
+                    output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    properties:
+                      COLUMN_STATS_ACCURATE {"BASIC_STATS":"true"}
+                      bucket_count -1
+                      column.name.delimiter ,
+                      columns ds,date,hr,hour
+                      columns.comments 
+                      columns.types string:string:string:string
+                      file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                      file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                      location hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour
+                      name default.srcpart_date_hour
+                      numFiles 8
+                      numRows 4
+                      rawDataSize 108
+                      serialization.ddl struct srcpart_date_hour { string ds, string date, string hr, string hour}
+                      serialization.format 1
+                      serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      totalSize 112
+                      transient_lastDdlTime 1494987183
+                    serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    name: default.srcpart_date_hour
+                  name: default.srcpart_date_hour
+            Truncated Path -> Alias:
+              /srcpart_date_hour [srcpart_date_hour]
+        Map 6 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart_date_hour
+                  Statistics: Num rows: 4 Data size: 108 Basic stats: COMPLETE Column stats: NONE
+                  GatherStats: false
+                  Filter Operator
+                    isSamplingPred: false
+                    predicate: (ds is not null and hr is not null and (date = '2008-04-08') and (hour = 11)) (type: boolean)
+                    Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                    Select Operator
+                      expressions: hr (type: string)
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                      Group By Operator
+                        keys: _col0 (type: string)
+                        mode: hash
+                        outputColumnNames: _col0
+                        Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                        Spark Partition Pruning Sink Operator
+                          partition key expr: hr
+                          tmp Path: hdfs://bdpe41:8020/tmp/hive/root/e9d807dd-3c62-4178-98d2-b2d4682eed5f/hive_2017-05-17_10-13-27_338_6217531020120527118-1/-mr-10004/1/6
+                          Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                          target column name: hr
+                          target work: Map 1
+            Path -> Alias:
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour [srcpart_date_hour]
+            Path -> Partition:
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour 
+                Partition
+                  base file name: srcpart_date_hour
+                  input format: org.apache.hadoop.mapred.TextInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                  properties:
+                    COLUMN_STATS_ACCURATE {"BASIC_STATS":"true"}
+                    bucket_count -1
+                    column.name.delimiter ,
+                    columns ds,date,hr,hour
+                    columns.comments 
+                    columns.types string:string:string:string
+                    file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                    file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    location hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour
+                    name default.srcpart_date_hour
+                    numFiles 8
+                    numRows 4
+                    rawDataSize 108
+                    serialization.ddl struct srcpart_date_hour { string ds, string date, string hr, string hour}
+                    serialization.format 1
+                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    totalSize 112
+                    transient_lastDdlTime 1494987183
+                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                
+                    input format: org.apache.hadoop.mapred.TextInputFormat
+                    output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    properties:
+                      COLUMN_STATS_ACCURATE {"BASIC_STATS":"true"}
+                      bucket_count -1
+                      column.name.delimiter ,
+                      columns ds,date,hr,hour
+                      columns.comments 
+                      columns.types string:string:string:string
+                      file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                      file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                      location hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour
+                      name default.srcpart_date_hour
+                      numFiles 8
+                      numRows 4
+                      rawDataSize 108
+                      serialization.ddl struct srcpart_date_hour { string ds, string date, string hr, string hour}
+                      serialization.format 1
+                      serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      totalSize 112
+                      transient_lastDdlTime 1494987183
+                    serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    name: default.srcpart_date_hour
+                  name: default.srcpart_date_hour
+            Truncated Path -> Alias:
+              /srcpart_date_hour [srcpart_date_hour]
+
+  Stage: Stage-1
+    Spark
+      Edges:
+        Reducer 2 <- Map 1 (PARTITION-LEVEL SORT, 10), Map 4 (PARTITION-LEVEL SORT, 10)
+        Reducer 3 <- Reducer 2 (GROUP, 1)
+      DagName: root_20170517101327_3661cfa0-395e-4941-93cf-5ec7ba22a9e1:1
+      Vertices:
+        Map 1 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart
+                  Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                  GatherStats: false
+                  Reduce Output Operator
+                    key expressions: ds (type: string), hr (type: string)
+                    null sort order: aa
+                    sort order: ++
+                    Map-reduce partition columns: ds (type: string), hr (type: string)
+                    Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                    tag: 0
+                    auto parallelism: false
+            Path -> Alias:
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-08/hr=11 [srcpart]
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-08/hr=12 [srcpart]
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-09/hr=11 [srcpart]
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-09/hr=12 [srcpart]
+            Path -> Partition:
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-08/hr=11 
+                Partition
+                  base file name: hr=11
+                  input format: org.apache.hadoop.mapred.TextInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                  partition values:
+                    ds 2008-04-08
+                    hr 11
+                  properties:
+                    bucket_count -1
+                    column.name.delimiter ,
+                    columns key,value
+                    columns.comments 'default','default'
+                    columns.types string:string
+                    file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                    file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    location hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-08/hr=11
+                    name default.srcpart
+                    numFiles 1
+                    numRows 0
+                    partition_columns ds/hr
+                    partition_columns.types string:string
+                    rawDataSize 0
+                    serialization.ddl struct srcpart { string key, string value}
+                    serialization.format 1
+                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    totalSize 5812
+                    transient_lastDdlTime 1494987153
+                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                
+                    input format: org.apache.hadoop.mapred.TextInputFormat
+                    output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    properties:
+                      bucket_count -1
+                      column.name.delimiter ,
+                      columns key,value
+                      columns.comments 'default','default'
+                      columns.types string:string
+                      file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                      file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                      location hdfs://bdpe41:8020/user/hive/warehouse/srcpart
+                      name default.srcpart
+                      partition_columns ds/hr
+                      partition_columns.types string:string
+                      serialization.ddl struct srcpart { string key, string value}
+                      serialization.format 1
+                      serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      transient_lastDdlTime 1494987151
+                    serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    name: default.srcpart
+                  name: default.srcpart
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-08/hr=12 
+                Partition
+                  base file name: hr=12
+                  input format: org.apache.hadoop.mapred.TextInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                  partition values:
+                    ds 2008-04-08
+                    hr 12
+                  properties:
+                    bucket_count -1
+                    column.name.delimiter ,
+                    columns key,value
+                    columns.comments 'default','default'
+                    columns.types string:string
+                    file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                    file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    location hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-08/hr=12
+                    name default.srcpart
+                    numFiles 1
+                    numRows 0
+                    partition_columns ds/hr
+                    partition_columns.types string:string
+                    rawDataSize 0
+                    serialization.ddl struct srcpart { string key, string value}
+                    serialization.format 1
+                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    totalSize 5812
+                    transient_lastDdlTime 1494987153
+                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                
+                    input format: org.apache.hadoop.mapred.TextInputFormat
+                    output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    properties:
+                      bucket_count -1
+                      column.name.delimiter ,
+                      columns key,value
+                      columns.comments 'default','default'
+                      columns.types string:string
+                      file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                      file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                      location hdfs://bdpe41:8020/user/hive/warehouse/srcpart
+                      name default.srcpart
+                      partition_columns ds/hr
+                      partition_columns.types string:string
+                      serialization.ddl struct srcpart { string key, string value}
+                      serialization.format 1
+                      serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      transient_lastDdlTime 1494987151
+                    serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    name: default.srcpart
+                  name: default.srcpart
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-09/hr=11 
+                Partition
+                  base file name: hr=11
+                  input format: org.apache.hadoop.mapred.TextInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                  partition values:
+                    ds 2008-04-09
+                    hr 11
+                  properties:
+                    bucket_count -1
+                    column.name.delimiter ,
+                    columns key,value
+                    columns.comments 'default','default'
+                    columns.types string:string
+                    file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                    file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    location hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-09/hr=11
+                    name default.srcpart
+                    numFiles 1
+                    numRows 0
+                    partition_columns ds/hr
+                    partition_columns.types string:string
+                    rawDataSize 0
+                    serialization.ddl struct srcpart { string key, string value}
+                    serialization.format 1
+                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    totalSize 5812
+                    transient_lastDdlTime 1494987154
+                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                
+                    input format: org.apache.hadoop.mapred.TextInputFormat
+                    output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    properties:
+                      bucket_count -1
+                      column.name.delimiter ,
+                      columns key,value
+                      columns.comments 'default','default'
+                      columns.types string:string
+                      file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                      file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                      location hdfs://bdpe41:8020/user/hive/warehouse/srcpart
+                      name default.srcpart
+                      partition_columns ds/hr
+                      partition_columns.types string:string
+                      serialization.ddl struct srcpart { string key, string value}
+                      serialization.format 1
+                      serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      transient_lastDdlTime 1494987151
+                    serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    name: default.srcpart
+                  name: default.srcpart
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-09/hr=12 
+                Partition
+                  base file name: hr=12
+                  input format: org.apache.hadoop.mapred.TextInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                  partition values:
+                    ds 2008-04-09
+                    hr 12
+                  properties:
+                    bucket_count -1
+                    column.name.delimiter ,
+                    columns key,value
+                    columns.comments 'default','default'
+                    columns.types string:string
+                    file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                    file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    location hdfs://bdpe41:8020/user/hive/warehouse/srcpart/ds=2008-04-09/hr=12
+                    name default.srcpart
+                    numFiles 1
+                    numRows 0
+                    partition_columns ds/hr
+                    partition_columns.types string:string
+                    rawDataSize 0
+                    serialization.ddl struct srcpart { string key, string value}
+                    serialization.format 1
+                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    totalSize 5812
+                    transient_lastDdlTime 1494987154
+                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                
+                    input format: org.apache.hadoop.mapred.TextInputFormat
+                    output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    properties:
+                      bucket_count -1
+                      column.name.delimiter ,
+                      columns key,value
+                      columns.comments 'default','default'
+                      columns.types string:string
+                      file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                      file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                      location hdfs://bdpe41:8020/user/hive/warehouse/srcpart
+                      name default.srcpart
+                      partition_columns ds/hr
+                      partition_columns.types string:string
+                      serialization.ddl struct srcpart { string key, string value}
+                      serialization.format 1
+                      serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      transient_lastDdlTime 1494987151
+                    serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    name: default.srcpart
+                  name: default.srcpart
+            Truncated Path -> Alias:
+              /srcpart/ds=2008-04-08/hr=11 [srcpart]
+              /srcpart/ds=2008-04-08/hr=12 [srcpart]
+              /srcpart/ds=2008-04-09/hr=11 [srcpart]
+              /srcpart/ds=2008-04-09/hr=12 [srcpart]
+        Map 4 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart_date_hour
+                  Statistics: Num rows: 4 Data size: 108 Basic stats: COMPLETE Column stats: NONE
+                  GatherStats: false
+                  Filter Operator
+                    isSamplingPred: false
+                    predicate: (ds is not null and hr is not null and (date = '2008-04-08') and (hour = 11)) (type: boolean)
+                    Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                    Reduce Output Operator
+                      key expressions: ds (type: string), hr (type: string)
+                      null sort order: aa
+                      sort order: ++
+                      Map-reduce partition columns: ds (type: string), hr (type: string)
+                      Statistics: Num rows: 1 Data size: 27 Basic stats: COMPLETE Column stats: NONE
+                      tag: 1
+                      auto parallelism: false
+            Path -> Alias:
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour [srcpart_date_hour]
+            Path -> Partition:
+              hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour 
+                Partition
+                  base file name: srcpart_date_hour
+                  input format: org.apache.hadoop.mapred.TextInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                  properties:
+                    COLUMN_STATS_ACCURATE {"BASIC_STATS":"true"}
+                    bucket_count -1
+                    column.name.delimiter ,
+                    columns ds,date,hr,hour
+                    columns.comments 
+                    columns.types string:string:string:string
+                    file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                    file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    location hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour
+                    name default.srcpart_date_hour
+                    numFiles 8
+                    numRows 4
+                    rawDataSize 108
+                    serialization.ddl struct srcpart_date_hour { string ds, string date, string hr, string hour}
+                    serialization.format 1
+                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    totalSize 112
+                    transient_lastDdlTime 1494987183
+                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                
+                    input format: org.apache.hadoop.mapred.TextInputFormat
+                    output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    properties:
+                      COLUMN_STATS_ACCURATE {"BASIC_STATS":"true"}
+                      bucket_count -1
+                      column.name.delimiter ,
+                      columns ds,date,hr,hour
+                      columns.comments 
+                      columns.types string:string:string:string
+                      file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                      file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                      location hdfs://bdpe41:8020/user/hive/warehouse/srcpart_date_hour
+                      name default.srcpart_date_hour
+                      numFiles 8
+                      numRows 4
+                      rawDataSize 108
+                      serialization.ddl struct srcpart_date_hour { string ds, string date, string hr, string hour}
+                      serialization.format 1
+                      serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      totalSize 112
+                      transient_lastDdlTime 1494987183
+                    serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    name: default.srcpart_date_hour
+                  name: default.srcpart_date_hour
+            Truncated Path -> Alias:
+              /srcpart_date_hour [srcpart_date_hour]
+        Reducer 2 
+            Needs Tagging: true
+            Reduce Operator Tree:
+              Join Operator
+                condition map:
+                     Inner Join 0 to 1
+                keys:
+                  0 ds (type: string), hr (type: string)
+                  1 ds (type: string), hr (type: string)
+                Statistics: Num rows: 1 Data size: 25572 Basic stats: COMPLETE Column stats: NONE
+                Group By Operator
+                  aggregations: count()
+                  mode: hash
+                  outputColumnNames: _col0
+                  Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                  Reduce Output Operator
+                    null sort order: 
+                    sort order: 
+                    Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                    tag: -1
+                    value expressions: _col0 (type: bigint)
+                    auto parallelism: false
+        Reducer 3 
+            Needs Tagging: false
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: count(VALUE._col0)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                File Output Operator
+                  compressed: false
+                  GlobalTableId: 0
+                  directory: hdfs://bdpe41:8020/tmp/hive/root/e9d807dd-3c62-4178-98d2-b2d4682eed5f/hive_2017-05-17_10-13-27_338_6217531020120527118-1/-mr-10001/.hive-staging_hive_2017-05-17_10-13-27_338_6217531020120527118-1/-ext-10002
+                  NumFilesPerFileSink: 1
+                  Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                  Stats Publishing Key Prefix: hdfs://bdpe41:8020/tmp/hive/root/e9d807dd-3c62-4178-98d2-b2d4682eed5f/hive_2017-05-17_10-13-27_338_6217531020120527118-1/-mr-10001/.hive-staging_hive_2017-05-17_10-13-27_338_6217531020120527118-1/-ext-10002/
+                  table:
+                      input format: org.apache.hadoop.mapred.SequenceFileInputFormat
+                      output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+                      properties:
+                        columns _col0
+                        columns.types bigint
+                        escape.delim \
+                        hive.serialization.extend.additional.nesting.levels true
+                        serialization.escape.crlf true
+                        serialization.format 1
+                        serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                  TotalFiles: 1
+                  GatherStats: false
+                  MultiFileSpray: false
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+        ListSink
+
+

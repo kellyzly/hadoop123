@@ -1,0 +1,65 @@
+STAGE DEPENDENCIES:
+  Stage-1 is a root stage
+  Stage-0 depends on stages: Stage-1
+
+STAGE PLANS:
+  Stage: Stage-1
+    Spark
+      Edges:
+        Reducer 2 <- Map 1 (GROUP, 12)
+
+      DagName: root_20170814234931_691f778e-cc09-4763-902e-da1fc97fe738:1
+      Vertices:
+
+        Map 1 
+            Map Operator Tree:
+                TableScan
+                  alias: t1
+                  Statistics: Num rows: 1 Data size: 30 Basic stats: COMPLETE Column stats: NONE
+                  Select Operator
+                    expressions: key (type: string), val (type: string)
+                    outputColumnNames: key, val
+                    Statistics: Num rows: 1 Data size: 30 Basic stats: COMPLETE Column stats: NONE
+                    Group By Operator
+                      aggregations: count(1)
+                      keys: key (type: string), val (type: string)
+                      mode: hash
+                      outputColumnNames: _col0, _col1, _col2
+                      Statistics: Num rows: 1 Data size: 30 Basic stats: COMPLETE Column stats: NONE
+                      Reduce Output Operator
+                        key expressions: _col0 (type: string), _col1 (type: string)
+
+                        sort order: ++
+                        Map-reduce partition columns: _col0 (type: string), _col1 (type: string)
+                        Statistics: Num rows: 1 Data size: 30 Basic stats: COMPLETE Column stats: NONE
+                        value expressions: _col2 (type: bigint)
+        Reducer 2 
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: count(VALUE._col0)
+                keys: KEY._col0 (type: string), KEY._col1 (type: string)
+                mode: mergepartial
+                outputColumnNames: _col0, _col1, _col2
+                Statistics: Num rows: 1 Data size: 30 Basic stats: COMPLETE Column stats: NONE
+
+
+
+
+                File Output Operator
+                  compressed: false
+                  Statistics: Num rows: 1 Data size: 30 Basic stats: COMPLETE Column stats: NONE
+
+
+
+
+                  table:
+                      input format: org.apache.hadoop.mapred.SequenceFileInputFormat
+                      output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+                      serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+        ListSink
+

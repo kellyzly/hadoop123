@@ -1,0 +1,2 @@
+ use default;
+ ANALYZE TABLE src COMPUTE STATISTICS;

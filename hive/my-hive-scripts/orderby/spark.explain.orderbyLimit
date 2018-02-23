@@ -1,0 +1,123 @@
+2017-05-09T10:12:49,570  INFO [02142ec0-746e-482f-aa98-f1aeb8b127ff main] ql.Driver: EXPLAIN output for queryid root_20170509101246_fbb4ca34-b2bd-4993-9ff8-65fcc17ea01c : STAGE DEPENDENCIES:
+  Stage-1 is a root stage [MAPRED]
+  Stage-0 depends on stages: Stage-1 [FETCH]
+
+STAGE PLANS:
+  Stage: Stage-1
+    Spark
+      Edges:
+        Reducer 2 <- Map 1 (SORT, 1)
+      DagName: root_20170509101246_fbb4ca34-b2bd-4993-9ff8-65fcc17ea01c:1
+      Vertices:
+        Map 1 
+            Map Operator Tree:
+                TableScan
+                  alias: src
+                  Statistics: Num rows: 58 Data size: 5812 Basic stats: COMPLETE Column stats: NONE
+                  GatherStats: false
+                  Select Operator
+                    expressions: key (type: string)
+                    outputColumnNames: _col0
+                    Statistics: Num rows: 58 Data size: 5812 Basic stats: COMPLETE Column stats: NONE
+                    Reduce Output Operator
+                      key expressions: _col0 (type: string)
+                      null sort order: a
+                      sort order: +
+                      Statistics: Num rows: 58 Data size: 5812 Basic stats: COMPLETE Column stats: NONE
+                      tag: -1
+                      TopN: 10
+                      TopN Hash Memory Usage: 0.1
+                      auto parallelism: false
+            Path -> Alias:
+              hdfs://bdpe41:8020/user/hive/warehouse/src [src]
+            Path -> Partition:
+              hdfs://bdpe41:8020/user/hive/warehouse/src 
+                Partition
+                  base file name: src
+                  input format: org.apache.hadoop.mapred.TextInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                  properties:
+                    bucket_count -1
+                    column.name.delimiter ,
+                    columns key,value
+                    columns.comments 'default','default'
+                    columns.types string:string
+                    file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                    file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    location hdfs://bdpe41:8020/user/hive/warehouse/src
+                    name default.src
+                    numFiles 1
+                    numRows 0
+                    rawDataSize 0
+                    serialization.ddl struct src { string key, string value}
+                    serialization.format 1
+                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    totalSize 5812
+                    transient_lastDdlTime 1493960133
+                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                
+                    input format: org.apache.hadoop.mapred.TextInputFormat
+                    output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    properties:
+                      bucket_count -1
+                      column.name.delimiter ,
+                      columns key,value
+                      columns.comments 'default','default'
+                      columns.types string:string
+                      file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                      file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                      location hdfs://bdpe41:8020/user/hive/warehouse/src
+                      name default.src
+                      numFiles 1
+                      numRows 0
+                      rawDataSize 0
+                      serialization.ddl struct src { string key, string value}
+                      serialization.format 1
+                      serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      totalSize 5812
+                      transient_lastDdlTime 1493960133
+                    serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    name: default.src
+                  name: default.src
+            Truncated Path -> Alias:
+              /src [src]
+        Reducer 2 
+            Needs Tagging: false
+            Reduce Operator Tree:
+              Select Operator
+                expressions: KEY.reducesinkkey0 (type: string)
+                outputColumnNames: _col0
+                Statistics: Num rows: 58 Data size: 5812 Basic stats: COMPLETE Column stats: NONE
+                Limit
+                  Number of rows: 10
+                  Statistics: Num rows: 10 Data size: 1000 Basic stats: COMPLETE Column stats: NONE
+                  File Output Operator
+                    compressed: false
+                    GlobalTableId: 0
+                    directory: hdfs://bdpe41:8020/tmp/hive/root/02142ec0-746e-482f-aa98-f1aeb8b127ff/hive_2017-05-09_10-12-46_938_4771342736096952413-1/-mr-10001/.hive-staging_hive_2017-05-09_10-12-46_938_4771342736096952413-1/-ext-10002
+                    NumFilesPerFileSink: 1
+                    Statistics: Num rows: 10 Data size: 1000 Basic stats: COMPLETE Column stats: NONE
+                    Stats Publishing Key Prefix: hdfs://bdpe41:8020/tmp/hive/root/02142ec0-746e-482f-aa98-f1aeb8b127ff/hive_2017-05-09_10-12-46_938_4771342736096952413-1/-mr-10001/.hive-staging_hive_2017-05-09_10-12-46_938_4771342736096952413-1/-ext-10002/
+                    table:
+                        input format: org.apache.hadoop.mapred.SequenceFileInputFormat
+                        output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+                        properties:
+                          columns _col0
+                          columns.types string
+                          escape.delim \
+                          hive.serialization.extend.additional.nesting.levels true
+                          serialization.escape.crlf true
+                          serialization.format 1
+                          serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                        serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    TotalFiles: 1
+                    GatherStats: false
+                    MultiFileSpray: false
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: 10
+      Processor Tree:
+        ListSink
+
+

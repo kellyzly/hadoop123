@@ -1,0 +1,33 @@
+grep Stats $HIVE_HOME/logs/hive.log
+    Stats-Aggr Operator
+2017-07-17T23:35:12,221  INFO [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] exec.StatsTask: Executing stats task
+2017-07-17T23:35:12,438  INFO [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] exec.StatsTask: Table default.orc_create_people_staging stats: [numFiles=1, numRows=0, totalSize=190, rawDataSize=0]
+2017-07-17T23:35:14,060 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] log.PerfLogger: <PERFLOG method=optimizer from=org.apache.hadoop.hive.ql.optimizer.StatsOptimizer>
+2017-07-17T23:35:14,060 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] log.PerfLogger: </PERFLOG method=optimizer start=1500348914060 end=1500348914060 duration=0 from=org.apache.hadoop.hive.ql.optimizer.StatsOptimizer org.apache.hadoop.hive.ql.optimizer.StatsOptimizer@d5a72cd>
+2017-07-17T23:35:14,071 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] stats.StatsUtils: Estimated average row size: 556
+2017-07-17T23:35:14,072 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] annotation.StatsRulesProcFactory: [0] STATS-TS[0] (orc_create_people_staging):  numRows: 1 dataSize: 190 basicStatsState: COMPLETE colStatsState: NONE colStats: {}
+2017-07-17T23:35:14,072 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] annotation.StatsRulesProcFactory: [1] STATS-SEL[1]:  numRows: 1 dataSize: 190 basicStatsState: COMPLETE colStatsState: NONE colStats: {}
+2017-07-17T23:35:14,072 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] annotation.StatsRulesProcFactory: [0] STATS-RS[2]:  numRows: 1 dataSize: 190 basicStatsState: COMPLETE colStatsState: NONE colStats: {}
+2017-07-17T23:35:14,072 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] annotation.StatsRulesProcFactory: [1] STATS-SEL[3]:  numRows: 1 dataSize: 190 basicStatsState: COMPLETE colStatsState: NONE colStats: {}
+2017-07-17T23:35:14,072 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] annotation.StatsRulesProcFactory: [0] STATS-FS[4]:  numRows: 1 dataSize: 190 basicStatsState: COMPLETE colStatsState: NONE colStats: {}
+2017-07-17T23:35:14,339 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] log.PerfLogger: <PERFLOG method=optimizer from=org.apache.hadoop.hive.ql.optimizer.StatsOptimizer>
+2017-07-17T23:35:14,339 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] log.PerfLogger: </PERFLOG method=optimizer start=1500348914339 end=1500348914339 duration=0 from=org.apache.hadoop.hive.ql.optimizer.StatsOptimizer org.apache.hadoop.hive.ql.optimizer.StatsOptimizer@19d9ba89>
+            GatherStats: false
+            Stats Publishing Key Prefix: hdfs://bdpe42:8020/user/hive/warehouse/orc_create_people/.hive-staging_hive_2017-07-17_23-35-14_190_1274075373256995772-1/-ext-10000/
+            GatherStats: true
+    Stats-Aggr Operator
+      Stats Aggregation Key Prefix: hdfs://bdpe42:8020/user/hive/warehouse/orc_create_people/.hive-staging_hive_2017-07-17_23-35-14_190_1274075373256995772-1/-ext-10000/
+2017-07-17T23:35:14,785 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsPublisher: Initing FSStatsPublisher with : hdfs://bdpe42:8020/user/hive/warehouse/orc_create_people/.hive-staging_hive_2017-07-17_23-35-14_190_1274075373256995772-1/-ext-10001
+2017-07-17T23:35:14,789  INFO [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsPublisher: created : hdfs://bdpe42:8020/user/hive/warehouse/orc_create_people/.hive-staging_hive_2017-07-17_23-35-14_190_1274075373256995772-1/-ext-10001
+2017-07-17T23:35:31,873  INFO [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] exec.StatsTask: Executing stats task
+2017-07-17T23:35:31,936 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsPublisher: Initing FSStatsPublisher with : hdfs://bdpe42:8020/user/hive/warehouse/orc_create_people/.hive-staging_hive_2017-07-17_23-35-14_190_1274075373256995772-1/-ext-10001
+2017-07-17T23:35:31,938  INFO [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsPublisher: created : hdfs://bdpe42:8020/user/hive/warehouse/orc_create_people/.hive-staging_hive_2017-07-17_23-35-14_190_1274075373256995772-1/-ext-10001
+2017-07-17T23:35:31,941 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsAggregator: About to read stats from : hdfs://bdpe42:8020/user/hive/warehouse/orc_create_people/.hive-staging_hive_2017-07-17_23-35-14_190_1274075373256995772-1/-ext-10001
+2017-07-17T23:35:31,990  INFO [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsAggregator: Read stats : {default.orc_create_people/={rawDataSize=336, numRows=3}}
+2017-07-17T23:35:32,006 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsAggregator: Part ID: default.orc_create_people/	numRows
+2017-07-17T23:35:32,006  INFO [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsAggregator: Read stats for : default.orc_create_people/	numRows	3
+2017-07-17T23:35:32,006 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsAggregator: Part ID: default.orc_create_people/	rawDataSize
+2017-07-17T23:35:32,006  INFO [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsAggregator: Read stats for : default.orc_create_people/	rawDataSize 336
+2017-07-17T23:35:32,303  INFO [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] exec.StatsTask: Table default.orc_create_people stats: [numFiles=1, numRows=3, totalSize=537, rawDataSize=336]
+2017-07-17T23:35:32,303 DEBUG [1dcb31a2-6d79-4ba1-a0fd-9f0bd7248a5b main] fs.FSStatsAggregator: About to delete stats tmp dir :hdfs://bdpe42:8020/user/hive/warehouse/orc_create_people/.hive-staging_hive_2017-07-17_23-35-14_190_1274075373256995772-1/-ext-10001
+

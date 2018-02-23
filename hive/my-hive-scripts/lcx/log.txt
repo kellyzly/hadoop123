@@ -1,0 +1,7 @@
+[root@bdpe822n1 hive]# ./bin/hive  --version
+Hive 2.3.0
+Git git://bdpe822n1/home/hive -r 9194cae423ddbaf9e7e4b16236292556ad601c92
+Compiled by root on Thu Jun 22 13:59:27 CST 2017
+From source with checksum 70cd3c5b7a7b9b9bdaa62b1b832e83ce
+[root@bdpe822n1 hive]# cd /home/workspace/DataGen/bin/
+hive -i mergefiles -f load.sql

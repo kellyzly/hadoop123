@@ -1,0 +1,16 @@
+2017-08-25T02:15:35,915  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: vectorizeReduceWork reducer Operator: GBY...
+2017-08-25T02:15:35,927  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: vectorizeReduceWork reducer Operator: GBY...
+[root@bdpe42 dpp]# grep ReduceWorkVectorizationNodeProcessor /home/zly/hos/hive/logs/hive.log
+2017-08-25T02:15:35,915  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process vectorizedVertexNum 1 reduceColumnNames [VALUE._col0]
+2017-08-25T02:15:35,915  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process vectorizedVertexNum 1 reduceTypeInfos [bigint]
+2017-08-25T02:15:35,915  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process operator GBY using vectorization contextContext name __Reduce_Shuffle__, level 0, sorted projectionColumnMap {0=VALUE._col0}, scratchColumnTypeNames []
+2017-08-25T02:15:35,916  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process going to walk the operator stack to get vectorization context for FS
+2017-08-25T02:15:35,916  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process operator FS using vectorization contextContext name GBY, level 0, sorted projectionColumnMap {0=_col0}, scratchColumnTypeNames []
+2017-08-25T02:15:35,927  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process vectorizedVertexNum 3 reduceColumnNames [KEY._col0]
+2017-08-25T02:15:35,927  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process vectorizedVertexNum 3 reduceTypeInfos [string]
+2017-08-25T02:15:35,927  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process operator GBY using vectorization contextContext name __Reduce_Shuffle__, level 0, sorted projectionColumnMap {0=KEY._col0}, scratchColumnTypeNames []
+2017-08-25T02:15:35,927  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process going to walk the operator stack to get vectorization context for SEL
+2017-08-25T02:15:35,928  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process operator SEL using vectorization contextContext name GBY, level 0, sorted projectionColumnMap {0=_col0}, scratchColumnTypeNames []
+2017-08-25T02:15:35,928  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process going to walk the operator stack to get vectorization context for HASHTABLESINK
+2017-08-25T02:15:35,928  INFO [f7ee9423-dc07-43f2-afd7-8bd7d78b1d7d main] physical.Vectorizer: ReduceWorkVectorizationNodeProcessor process operator HASHTABLESINK using vectorization contextContext name SEL, level 1, sorted projectionColumnMap {}, scratchColumnTypeNames []
+

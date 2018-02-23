@@ -1,0 +1,31 @@
+# col_name            	data_type           	comment             
+	 	 
+key                 	string              	                    
+value               	string              	                    
+	 	 
+# Detailed Table Information	 	 
+Database:           	default             	 
+Owner:              	root                	 
+CreateTime:         	Tue Jul 18 01:39:21 EDT 2017	 
+LastAccessTime:     	UNKNOWN             	 
+Retention:          	0                   	 
+Location:           	hdfs://bdpe42:8020/user/hive/warehouse/t1	 
+Table Type:         	MANAGED_TABLE       	 
+Table Parameters:	 	 
+	COLUMN_STATS_ACCURATE	{\"BASIC_STATS\":\"true\"}
+	numFiles            	1                   
+	numRows             	500                 
+	rawDataSize         	5312                
+	totalSize           	5812                
+	transient_lastDdlTime	1500356366          
+	 	 
+# Storage Information	 	 
+SerDe Library:      	org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe	 
+InputFormat:        	org.apache.hadoop.mapred.TextInputFormat	 
+OutputFormat:       	org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat	 
+Compressed:         	No                  	 
+Num Buckets:        	-1                  	 
+Bucket Columns:     	[]                  	 
+Sort Columns:       	[]                  	 
+Storage Desc Params:	 	 
+	serialization.format	

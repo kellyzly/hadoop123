@@ -1,0 +1,18 @@
+set hive.optimize.ppd=true;
+set hive.ppd.remove.duplicatefilters=true;
+set hive.tez.dynamic.partition.pruning=false;
+set hive.optimize.metadataonly=false;
+set hive.optimize.index.filter=true;
+set hive.vectorized.execution.enabled=true;
+set hive.strict.checks.cartesian.product=false;
+set hive.cbo.enable=false;
+set hive.user.install.directory=file:///tmp;
+set fs.default.name=file:///;
+set fs.defaultFS=file:///;
+set tez.staging-dir=/tmp;
+set tez.ignore.lib.uris=true;
+set tez.runtime.optimize.local.fetch=true;
+set tez.local.mode=true;
+set hive.explain.user=false;
+--select ds as ds, ds as `date` from srcpart group by ds;
+explain select count(*) from srcpart join (select ds as ds, ds as `date` from srcpart group by ds) s on (srcpart.ds = s.ds) where s.`date` = '2008-04-08';

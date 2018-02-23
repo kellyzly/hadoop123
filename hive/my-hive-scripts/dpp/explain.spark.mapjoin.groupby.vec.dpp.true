@@ -1,0 +1,306 @@
+2017-08-24 00:53:28,744 main DEBUG Initializing configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@6ca8564a
+2017-08-24 00:53:28,820 main DEBUG Installed script engines
+2017-08-24 00:53:29,123 main DEBUG Oracle Nashorn Version: 1.8.0_91, Language: ECMAScript, Threading: Not Thread Safe, Compile: true, Names: {nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript}
+2017-08-24 00:53:29,134 main DEBUG Groovy Scripting Engine Version: 2.0, Language: Groovy, Threading: MULTITHREADED, Compile: true, Names: {groovy, Groovy}
+2017-08-24 00:53:29,791 main DEBUG Scala Interpreter Version: 1.0, Language: Scala, Threading: Not Thread Safe, Compile: true, Names: {scala}
+2017-08-24 00:53:30,561 main DEBUG Took 0.769238 seconds to load 5 plugins from package org.apache.hadoop.hive.ql.log
+2017-08-24 00:53:30,561 main DEBUG PluginManager 'Core' found 106 plugins
+2017-08-24 00:53:30,562 main DEBUG PluginManager 'Level' found 0 plugins
+2017-08-24 00:53:30,564 main DEBUG No scheduled items
+2017-08-24 00:53:30,566 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:30,577 main DEBUG PluginManager 'TypeConverter' found 23 plugins
+2017-08-24 00:53:30,585 main DEBUG createProperty(name="hive.log.file", value="hive.log")
+2017-08-24 00:53:30,586 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:30,586 main DEBUG createProperty(name="hive.log.dir", value="/home/zly/hos/hive/logs")
+2017-08-24 00:53:30,586 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:30,587 main DEBUG createProperty(name="hive.log.level", value="DEBUG")
+2017-08-24 00:53:30,587 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:30,587 main DEBUG createProperty(name="hive.root.logger", value="DRFA")
+2017-08-24 00:53:30,587 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:30,588 main DEBUG createProperty(name="hive.perflogger.log.level", value="DEBUG")
+2017-08-24 00:53:30,588 main DEBUG Building Plugin[name=properties, class=org.apache.logging.log4j.core.config.PropertiesPlugin].
+2017-08-24 00:53:30,600 main DEBUG configureSubstitutor(={hive.log.file=hive.log, hive.log.dir=/home/zly/hos/hive/logs, hive.log.level=DEBUG, hive.root.logger=DRFA, hive.perflogger.log.level=DEBUG}, Configuration(HiveLog4j2))
+2017-08-24 00:53:30,600 main DEBUG PluginManager 'Lookup' found 14 plugins
+2017-08-24 00:53:30,601 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:30,607 main DEBUG createLogger(additivity="true", level="WARN", name="org.apache.zookeeper.server.NIOServerCnxn", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:30,608 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:30,609 main DEBUG createLogger(additivity="true", level="WARN", name="org.apache.zookeeper.ClientCnxnSocketNIO", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:30,609 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:30,611 main DEBUG createLogger(additivity="true", level="ERROR", name="DataNucleus", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:30,612 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:30,613 main DEBUG createLogger(additivity="true", level="ERROR", name="Datastore", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:30,613 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:30,614 main DEBUG createLogger(additivity="true", level="ERROR", name="JPOX", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:30,614 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:30,615 main DEBUG createLogger(additivity="true", level="DEBUG", name="org.apache.hadoop.hive.ql.log.PerfLogger", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:30,615 main DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2017-08-24 00:53:30,616 main DEBUG createAppenderRef(ref="DRFA", level="null", Filter=null)
+2017-08-24 00:53:30,616 main DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2017-08-24 00:53:30,617 main DEBUG createLogger(additivity="null", level="DEBUG", includeLocation="true", ={DRFA}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:30,618 main DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2017-08-24 00:53:30,618 main DEBUG createLoggers(={org.apache.zookeeper.server.NIOServerCnxn, org.apache.zookeeper.ClientCnxnSocketNIO, DataNucleus, Datastore, JPOX, org.apache.hadoop.hive.ql.log.PerfLogger, root})
+2017-08-24 00:53:30,619 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2017-08-24 00:53:30,623 main DEBUG PatternLayout$Builder(pattern="%d{ISO8601} %5p [%t] %c{2}: %m%n", PatternSelector=null, Configuration(HiveLog4j2), Replace=null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null", header="null", footer="null")
+2017-08-24 00:53:30,623 main DEBUG PluginManager 'Converter' found 41 plugins
+2017-08-24 00:53:30,637 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.ConsoleAppender].
+2017-08-24 00:53:30,638 main DEBUG PluginManager 'Converter' found 41 plugins
+2017-08-24 00:53:30,639 main DEBUG Starting OutputStreamManager SYSTEM_OUT.false.false-2
+2017-08-24 00:53:30,641 main DEBUG ConsoleAppender$Builder(PatternLayout(%d{ISO8601} %5p [%t] %c{2}: %m%n), Filter=null, target="SYSTEM_ERR", name="console", follow="null", direct="null", ignoreExceptions="null")
+2017-08-24 00:53:30,642 main ERROR Console contains an invalid element or attribute "Append"
+2017-08-24 00:53:30,642 main DEBUG Starting OutputStreamManager SYSTEM_ERR.false.false
+2017-08-24 00:53:30,642 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2017-08-24 00:53:30,643 main DEBUG PatternLayout$Builder(pattern="%d{ISO8601} %5p [%t] %c{2}: %m%n", PatternSelector=null, Configuration(HiveLog4j2), Replace=null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null", header="null", footer="null")
+2017-08-24 00:53:30,643 main DEBUG Building Plugin[name=DefaultRolloverStrategy, class=org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy].
+2017-08-24 00:53:30,645 main DEBUG createStrategy(max="30", min="null", fileIndex="null", compressionLevel="null", ={}, stopCustomActionsOnError="true", Configuration(HiveLog4j2))
+2017-08-24 00:53:30,646 main DEBUG Building Plugin[name=TimeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.TimeBasedTriggeringPolicy].
+2017-08-24 00:53:30,646 main DEBUG createPolicy(interval="1", modulate="true")
+2017-08-24 00:53:30,647 main DEBUG Building Plugin[name=Policies, class=org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy].
+2017-08-24 00:53:30,647 main DEBUG createPolicy(={TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=true)})
+2017-08-24 00:53:30,647 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender].
+2017-08-24 00:53:30,649 main DEBUG createAppender(fileName="/home/zly/hos/hive/logs/hive.log", filePattern="/home/zly/hos/hive/logs/hive.log.%d{yyyy-MM-dd}", append="false", name="DRFA", immediateFlush="null", bufferSize="null", Policies(CompositeTriggeringPolicy(policies=[TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=true)])), DefaultRolloverStrategy(DefaultRolloverStrategy(min=1, max=30)), PatternLayout(%d{ISO8601} %5p [%t] %c{2}: %m%n), Filter=null, ignoreExceptions="null", advertise="null", advertiseURI="null", Configuration(HiveLog4j2))
+2017-08-24 00:53:30,654 main DEBUG Starting RollingRandomAccessFileManager /home/zly/hos/hive/logs/hive.log
+2017-08-24 00:53:30,655 main DEBUG PluginManager 'FileConverter' found 3 plugins
+2017-08-24 00:53:30,656 main DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2017-08-24 00:53:30,657 main DEBUG createAppenders(={console, DRFA})
+2017-08-24 00:53:30,657 main DEBUG Configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@6ca8564a initialized
+2017-08-24 00:53:30,658 main DEBUG Starting configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@6ca8564a
+2017-08-24 00:53:30,658 main DEBUG Started configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@6ca8564a OK.
+2017-08-24 00:53:30,658 main DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-1
+2017-08-24 00:53:30,659 main DEBUG Stopped org.apache.logging.log4j.core.config.DefaultConfiguration@5c18298f OK
+2017-08-24 00:53:30,710 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8
+2017-08-24 00:53:30,714 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=StatusLogger
+2017-08-24 00:53:30,715 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=ContextSelector
+2017-08-24 00:53:30,717 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=org.apache.hadoop.hive.ql.log.PerfLogger
+2017-08-24 00:53:30,717 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=
+2017-08-24 00:53:30,717 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=DataNucleus
+2017-08-24 00:53:30,718 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=Datastore
+2017-08-24 00:53:30,718 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=org.apache.zookeeper.ClientCnxnSocketNIO
+2017-08-24 00:53:30,718 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=org.apache.zookeeper.server.NIOServerCnxn
+2017-08-24 00:53:30,719 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=JPOX
+2017-08-24 00:53:30,719 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Appenders,name=console
+2017-08-24 00:53:30,720 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Appenders,name=DRFA
+2017-08-24 00:53:30,723 main DEBUG Reconfiguration complete for context[name=b81eda8] at URI /home/zly/hos/HIVE-16823/conf/hive-log4j2.properties (org.apache.logging.log4j.core.LoggerContext@5cad8b7d) with optional ClassLoader: null
+2017-08-24 00:53:30,723 main DEBUG Shutdown hook enabled. Registering a new one.
+2017-08-24 00:53:30,724 main DEBUG LoggerContext[name=b81eda8, org.apache.logging.log4j.core.LoggerContext@5cad8b7d] started OK.
+2017-08-24 00:53:31,284 main DEBUG Using ShutdownCallbackRegistry class org.apache.logging.log4j.core.util.DefaultShutdownCallbackRegistry
+2017-08-24 00:53:31,287 main DEBUG PluginManager 'Converter' found 41 plugins
+2017-08-24 00:53:31,288 main DEBUG Starting OutputStreamManager SYSTEM_OUT.false.false-3
+2017-08-24 00:53:31,290 main DEBUG Using configurationFactory org.apache.logging.log4j.core.config.ConfigurationFactory$Factory@57fae983
+2017-08-24 00:53:31,291 main DEBUG Starting LoggerContext[name=AsyncContext@b81eda8] from configuration at file:/home/zly/hos/HIVE-16823/conf/hive-log4j2.properties
+2017-08-24 00:53:31,321 main DEBUG [AsyncContext@b81eda8] Starting AsyncLogger disruptor for this context with ringbufferSize=262144, waitStrategy=TimeoutBlockingWaitStrategy, exceptionHandler=org.apache.logging.log4j.core.async.AsyncLoggerDefaultExceptionHandler@441cc260...
+2017-08-24 00:53:31,322 main DEBUG Starting LoggerContext[name=AsyncContext@b81eda8, org.apache.logging.log4j.core.async.AsyncLoggerContext@66e889df] with configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@444548a0...
+2017-08-24 00:53:31,322 main DEBUG Shutdown hook enabled. Registering a new one.
+2017-08-24 00:53:31,322 main DEBUG Initializing configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@444548a0
+2017-08-24 00:53:31,324 main DEBUG Installed script engines
+2017-08-24 00:53:31,332 main DEBUG Oracle Nashorn Version: 1.8.0_91, Language: ECMAScript, Threading: Not Thread Safe, Compile: true, Names: {nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript}
+2017-08-24 00:53:31,332 main DEBUG Groovy Scripting Engine Version: 2.0, Language: Groovy, Threading: MULTITHREADED, Compile: true, Names: {groovy, Groovy}
+2017-08-24 00:53:31,340 main DEBUG Scala Interpreter Version: 1.0, Language: Scala, Threading: Not Thread Safe, Compile: true, Names: {scala}
+2017-08-24 00:53:31,340 main DEBUG PluginManager 'Core' found 106 plugins
+2017-08-24 00:53:31,341 main DEBUG PluginManager 'Level' found 0 plugins
+2017-08-24 00:53:31,341 main DEBUG No scheduled items
+2017-08-24 00:53:31,341 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:31,341 main DEBUG createProperty(name="hive.log.file", value="hive.log")
+2017-08-24 00:53:31,342 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:31,342 main DEBUG createProperty(name="hive.log.dir", value="/home/zly/hos/hive/logs")
+2017-08-24 00:53:31,342 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:31,342 main DEBUG createProperty(name="hive.log.level", value="DEBUG")
+2017-08-24 00:53:31,342 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:31,343 main DEBUG createProperty(name="hive.root.logger", value="DRFA")
+2017-08-24 00:53:31,343 main DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2017-08-24 00:53:31,343 main DEBUG createProperty(name="hive.perflogger.log.level", value="DEBUG")
+2017-08-24 00:53:31,343 main DEBUG Building Plugin[name=properties, class=org.apache.logging.log4j.core.config.PropertiesPlugin].
+2017-08-24 00:53:31,344 main DEBUG configureSubstitutor(={hive.log.file=hive.log, hive.log.dir=/home/zly/hos/hive/logs, hive.log.level=DEBUG, hive.root.logger=DRFA, hive.perflogger.log.level=DEBUG}, Configuration(HiveLog4j2))
+2017-08-24 00:53:31,344 main DEBUG PluginManager 'Lookup' found 14 plugins
+2017-08-24 00:53:31,344 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:31,345 main DEBUG createLogger(additivity="true", level="WARN", name="org.apache.zookeeper.server.NIOServerCnxn", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:31,345 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:31,345 main DEBUG createLogger(additivity="true", level="WARN", name="org.apache.zookeeper.ClientCnxnSocketNIO", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:31,346 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:31,346 main DEBUG createLogger(additivity="true", level="ERROR", name="DataNucleus", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:31,347 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:31,347 main DEBUG createLogger(additivity="true", level="ERROR", name="Datastore", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:31,347 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:31,348 main DEBUG createLogger(additivity="true", level="ERROR", name="JPOX", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:31,348 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2017-08-24 00:53:31,349 main DEBUG createLogger(additivity="true", level="DEBUG", name="org.apache.hadoop.hive.ql.log.PerfLogger", includeLocation="true", ={}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:31,349 main DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2017-08-24 00:53:31,349 main DEBUG createAppenderRef(ref="DRFA", level="null", Filter=null)
+2017-08-24 00:53:31,349 main DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2017-08-24 00:53:31,350 main DEBUG createLogger(additivity="null", level="DEBUG", includeLocation="true", ={DRFA}, ={}, Configuration(HiveLog4j2), Filter=null)
+2017-08-24 00:53:31,350 main DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2017-08-24 00:53:31,350 main DEBUG createLoggers(={org.apache.zookeeper.server.NIOServerCnxn, org.apache.zookeeper.ClientCnxnSocketNIO, DataNucleus, Datastore, JPOX, org.apache.hadoop.hive.ql.log.PerfLogger, root})
+2017-08-24 00:53:31,350 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2017-08-24 00:53:31,351 main DEBUG PatternLayout$Builder(pattern="%d{ISO8601} %5p [%t] %c{2}: %m%n", PatternSelector=null, Configuration(HiveLog4j2), Replace=null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null", header="null", footer="null")
+2017-08-24 00:53:31,351 main DEBUG PluginManager 'Converter' found 41 plugins
+2017-08-24 00:53:31,351 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.ConsoleAppender].
+2017-08-24 00:53:31,352 main DEBUG PluginManager 'Converter' found 41 plugins
+2017-08-24 00:53:31,352 main DEBUG Starting OutputStreamManager SYSTEM_OUT.false.false-4
+2017-08-24 00:53:31,353 main DEBUG ConsoleAppender$Builder(PatternLayout(%d{ISO8601} %5p [%t] %c{2}: %m%n), Filter=null, target="SYSTEM_ERR", name="console", follow="null", direct="null", ignoreExceptions="null")
+2017-08-24 00:53:31,353 main ERROR Console contains an invalid element or attribute "Append"
+2017-08-24 00:53:31,353 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2017-08-24 00:53:31,354 main DEBUG PatternLayout$Builder(pattern="%d{ISO8601} %5p [%t] %c{2}: %m%n", PatternSelector=null, Configuration(HiveLog4j2), Replace=null, charset="null", alwaysWriteExceptions="null", noConsoleNoAnsi="null", header="null", footer="null")
+2017-08-24 00:53:31,354 main DEBUG Building Plugin[name=DefaultRolloverStrategy, class=org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy].
+2017-08-24 00:53:31,355 main DEBUG createStrategy(max="30", min="null", fileIndex="null", compressionLevel="null", ={}, stopCustomActionsOnError="true", Configuration(HiveLog4j2))
+2017-08-24 00:53:31,355 main DEBUG Building Plugin[name=TimeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.TimeBasedTriggeringPolicy].
+2017-08-24 00:53:31,356 main DEBUG createPolicy(interval="1", modulate="true")
+2017-08-24 00:53:31,356 main DEBUG Building Plugin[name=Policies, class=org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy].
+2017-08-24 00:53:31,356 main DEBUG createPolicy(={TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=true)})
+2017-08-24 00:53:31,356 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender].
+2017-08-24 00:53:31,357 main DEBUG createAppender(fileName="/home/zly/hos/hive/logs/hive.log", filePattern="/home/zly/hos/hive/logs/hive.log.%d{yyyy-MM-dd}", append="false", name="DRFA", immediateFlush="null", bufferSize="null", Policies(CompositeTriggeringPolicy(policies=[TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=true)])), DefaultRolloverStrategy(DefaultRolloverStrategy(min=1, max=30)), PatternLayout(%d{ISO8601} %5p [%t] %c{2}: %m%n), Filter=null, ignoreExceptions="null", advertise="null", advertiseURI="null", Configuration(HiveLog4j2))
+2017-08-24 00:53:31,358 main DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2017-08-24 00:53:31,358 main DEBUG createAppenders(={console, DRFA})
+2017-08-24 00:53:31,358 main DEBUG Configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@444548a0 initialized
+2017-08-24 00:53:31,358 main DEBUG Starting configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@444548a0
+2017-08-24 00:53:31,358 main DEBUG Started configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@444548a0 OK.
+2017-08-24 00:53:31,359 main DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-3
+2017-08-24 00:53:31,359 main DEBUG Stopped org.apache.logging.log4j.core.config.DefaultConfiguration@14151bc5 OK
+2017-08-24 00:53:31,360 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8
+2017-08-24 00:53:31,360 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=StatusLogger
+2017-08-24 00:53:31,360 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=ContextSelector
+2017-08-24 00:53:31,361 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=org.apache.hadoop.hive.ql.log.PerfLogger
+2017-08-24 00:53:31,361 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=
+2017-08-24 00:53:31,361 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=DataNucleus
+2017-08-24 00:53:31,361 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=Datastore
+2017-08-24 00:53:31,362 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=org.apache.zookeeper.ClientCnxnSocketNIO
+2017-08-24 00:53:31,362 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=org.apache.zookeeper.server.NIOServerCnxn
+2017-08-24 00:53:31,362 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Loggers,name=JPOX
+2017-08-24 00:53:31,362 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Appenders,name=console
+2017-08-24 00:53:31,362 main DEBUG Registering MBean org.apache.logging.log4j2:type=b81eda8,component=Appenders,name=DRFA
+2017-08-24 00:53:31,363 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8
+2017-08-24 00:53:31,364 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=AsyncLoggerRingBuffer
+2017-08-24 00:53:31,364 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=StatusLogger
+2017-08-24 00:53:31,365 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=ContextSelector
+2017-08-24 00:53:31,365 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=Loggers,name=org.apache.hadoop.hive.ql.log.PerfLogger
+2017-08-24 00:53:31,365 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=Loggers,name=
+2017-08-24 00:53:31,365 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=Loggers,name=DataNucleus
+2017-08-24 00:53:31,365 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=Loggers,name=Datastore
+2017-08-24 00:53:31,366 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=Loggers,name=org.apache.zookeeper.ClientCnxnSocketNIO
+2017-08-24 00:53:31,366 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=Loggers,name=org.apache.zookeeper.server.NIOServerCnxn
+2017-08-24 00:53:31,366 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=Loggers,name=JPOX
+2017-08-24 00:53:31,366 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=Appenders,name=console
+2017-08-24 00:53:31,367 main DEBUG Registering MBean org.apache.logging.log4j2:type=AsyncContext@b81eda8,component=Appenders,name=DRFA
+2017-08-24 00:53:31,367 main DEBUG LoggerContext[name=AsyncContext@b81eda8, org.apache.logging.log4j.core.async.AsyncLoggerContext@66e889df] started OK with configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@444548a0.
+2017-08-24 00:53:31,437 main DEBUG AsyncLogger.ThreadNameStrategy=CACHED
+STAGE DEPENDENCIES:
+  Stage-2 is a root stage
+  Stage-1 depends on stages: Stage-2
+  Stage-0 depends on stages: Stage-1
+
+STAGE PLANS:
+  Stage: Stage-2
+    Spark
+      Edges:
+        Reducer 2 <- Map 1 (GROUP, 2)
+      DagName: root_20170824005332_e1604267-7af5-42e9-a079-a50b4e915c43:2
+      Vertices:
+        Map 1 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart
+                  filterExpr: (true and (ds = '2008-04-08')) (type: boolean)
+                  Statistics: Num rows: 1 Data size: 11624 Basic stats: PARTIAL Column stats: NONE
+                  Filter Operator
+                    predicate: true (type: boolean)
+                    Statistics: Num rows: 1 Data size: 11624 Basic stats: COMPLETE Column stats: NONE
+                    Select Operator
+                      Statistics: Num rows: 1 Data size: 11624 Basic stats: COMPLETE Column stats: NONE
+                      Group By Operator
+                        keys: '2008-04-08' (type: string)
+                        mode: hash
+                        outputColumnNames: _col0
+                        Statistics: Num rows: 1 Data size: 11624 Basic stats: COMPLETE Column stats: NONE
+                        Reduce Output Operator
+                          key expressions: '2008-04-08' (type: string)
+                          sort order: +
+                          Map-reduce partition columns: '2008-04-08' (type: string)
+                          Statistics: Num rows: 1 Data size: 11624 Basic stats: COMPLETE Column stats: NONE
+            Execution mode: vectorized
+        Reducer 2 
+            Execution mode: vectorized
+            Local Work:
+              Map Reduce Local Work
+            Reduce Operator Tree:
+              Group By Operator
+                keys: '2008-04-08' (type: string)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 11624 Basic stats: COMPLETE Column stats: NONE
+                Select Operator
+                  Statistics: Num rows: 1 Data size: 11624 Basic stats: COMPLETE Column stats: NONE
+                  Spark HashTable Sink Operator
+                    keys:
+                      0 ds (type: string)
+                      1 '2008-04-08' (type: string)
+                  Select Operator
+                    expressions: '2008-04-08' (type: string)
+                    outputColumnNames: _col0
+                    Statistics: Num rows: 1 Data size: 11624 Basic stats: COMPLETE Column stats: NONE
+                    Group By Operator
+                      keys: _col0 (type: string)
+                      mode: hash
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 11624 Basic stats: COMPLETE Column stats: NONE
+                      Spark Partition Pruning Sink Operator
+                        partition key expr: ds
+                        Statistics: Num rows: 1 Data size: 11624 Basic stats: COMPLETE Column stats: NONE
+                        target column name: ds
+                        target work: Map 3
+
+  Stage: Stage-1
+    Spark
+      Edges:
+        Reducer 4 <- Map 3 (GROUP, 1)
+      DagName: root_20170824005332_e1604267-7af5-42e9-a079-a50b4e915c43:1
+      Vertices:
+        Map 3 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart
+                  filterExpr: (ds is not null and true) (type: boolean)
+                  Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                  Filter Operator
+                    predicate: true (type: boolean)
+                    Statistics: Num rows: 1 Data size: 23248 Basic stats: COMPLETE Column stats: NONE
+                    Map Join Operator
+                      condition map:
+                           Inner Join 0 to 1
+                      keys:
+                        0 ds (type: string)
+                        1 '2008-04-08' (type: string)
+                      input vertices:
+                        1 Reducer 2
+                      Statistics: Num rows: 1 Data size: 25572 Basic stats: COMPLETE Column stats: NONE
+                      Group By Operator
+                        aggregations: count()
+                        mode: hash
+                        outputColumnNames: _col0
+                        Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                        Reduce Output Operator
+                          sort order: 
+                          Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                          value expressions: _col0 (type: bigint)
+            Execution mode: vectorized
+            Local Work:
+              Map Reduce Local Work
+        Reducer 4 
+            Execution mode: vectorized
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: count(VALUE._col0)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                File Output Operator
+                  compressed: false
+                  Statistics: Num rows: 1 Data size: 8 Basic stats: COMPLETE Column stats: NONE
+                  table:
+                      input format: org.apache.hadoop.mapred.SequenceFileInputFormat
+                      output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+                      serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+        ListSink
+

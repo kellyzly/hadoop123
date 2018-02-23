@@ -1,0 +1,23 @@
+set hive.mapred.mode=nonstrict;
+set hive.exec.reducers.bytes.per.reducer=256;
+
+drop table if exists e1;
+drop table if exists e2;
+create table e1 (count int);
+create table e2 (key string);
+set hive.stats.dbclass=fs;
+explain
+FROM (select key, cast(key as double) as value from src order by key) a
+INSERT OVERWRITE TABLE e1
+    SELECT COUNT(*)
+INSERT OVERWRITE TABLE e2
+    SELECT key;
+
+FROM (select key, cast(key as double) as value from src order by key) a
+INSERT OVERWRITE TABLE e1
+    SELECT COUNT(*)
+INSERT OVERWRITE TABLE e2
+    SELECT key;
+
+select * from e1;
+select * from e2;

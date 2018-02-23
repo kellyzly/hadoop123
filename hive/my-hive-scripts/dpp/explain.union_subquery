@@ -1,0 +1,274 @@
+STAGE DEPENDENCIES:
+  Stage-2 is a root stage
+  Stage-1 depends on stages: Stage-2
+  Stage-0 depends on stages: Stage-1
+
+STAGE PLANS:
+  Stage: Stage-2
+    Spark
+      Edges:
+        Reducer 11 <- Map 10 (GROUP, 1)
+        Reducer 13 <- Map 12 (GROUP, 1)
+      DagName: root_20170704221443_44d0325d-8a8b-417a-815b-526e901b908a:2
+      Vertices:
+        Map 10 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart
+                  Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                  Select Operator
+                    expressions: ds (type: string)
+                    outputColumnNames: ds
+                    Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                    Group By Operator
+                      aggregations: max(ds)
+                      mode: hash
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                      Reduce Output Operator
+                        sort order: 
+                        Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                        value expressions: _col0 (type: string)
+        Map 12 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart
+                  Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                  Select Operator
+                    expressions: ds (type: string)
+                    outputColumnNames: ds
+                    Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                    Group By Operator
+                      aggregations: min(ds)
+                      mode: hash
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                      Reduce Output Operator
+                        sort order: 
+                        Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                        value expressions: _col0 (type: string)
+        Reducer 11 
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: max(VALUE._col0)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                Filter Operator
+                  predicate: _col0 is not null (type: boolean)
+                  Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                  Group By Operator
+                    keys: _col0 (type: string)
+                    mode: hash
+                    outputColumnNames: _col0
+                    Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                    Select Operator
+                      expressions: _col0 (type: string)
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                      Group By Operator
+                        keys: _col0 (type: string)
+                        mode: hash
+                        outputColumnNames: _col0
+                        Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                        Spark Partition Pruning Sink Operator
+                          partition key expr: ds
+                          Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                          target column name: ds
+                          target work: Map 4
+                    Select Operator
+                      expressions: _col0 (type: string)
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                      Group By Operator
+                        keys: _col0 (type: string)
+                        mode: hash
+                        outputColumnNames: _col0
+                        Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                        Spark Partition Pruning Sink Operator
+                          partition key expr: ds
+                          Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                          target column name: ds
+                          target work: Map 1
+        Reducer 13 
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: min(VALUE._col0)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                Filter Operator
+                  predicate: _col0 is not null (type: boolean)
+                  Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                  Group By Operator
+                    keys: _col0 (type: string)
+                    mode: hash
+                    outputColumnNames: _col0
+                    Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                    Select Operator
+                      expressions: _col0 (type: string)
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                      Group By Operator
+                        keys: _col0 (type: string)
+                        mode: hash
+                        outputColumnNames: _col0
+                        Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                        Spark Partition Pruning Sink Operator
+                          partition key expr: ds
+                          Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                          target column name: ds
+                          target work: Map 4
+                    Select Operator
+                      expressions: _col0 (type: string)
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                      Group By Operator
+                        keys: _col0 (type: string)
+                        mode: hash
+                        outputColumnNames: _col0
+                        Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                        Spark Partition Pruning Sink Operator
+                          partition key expr: ds
+                          Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                          target column name: ds
+                          target work: Map 1
+
+  Stage: Stage-1
+    Spark
+      Edges:
+        Reducer 2 <- Map 1 (GROUP, 10)
+        Reducer 3 <- Reducer 2 (PARTITION-LEVEL SORT, 10), Reducer 2 (PARTITION-LEVEL SORT, 10), Reducer 7 (PARTITION-LEVEL SORT, 10), Reducer 9 (PARTITION-LEVEL SORT, 10)
+        Reducer 7 <- Map 6 (GROUP, 1)
+        Reducer 9 <- Map 8 (GROUP, 1)
+      DagName: root_20170704221443_44d0325d-8a8b-417a-815b-526e901b908a:1
+      Vertices:
+        Map 1 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart
+                  filterExpr: ds is not null (type: boolean)
+                  Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                  Group By Operator
+                    keys: ds (type: string)
+                    mode: hash
+                    outputColumnNames: _col0
+                    Statistics: Num rows: 1 Data size: 23248 Basic stats: COMPLETE Column stats: NONE
+                    Reduce Output Operator
+                      key expressions: _col0 (type: string)
+                      sort order: +
+                      Map-reduce partition columns: _col0 (type: string)
+                      Statistics: Num rows: 1 Data size: 23248 Basic stats: COMPLETE Column stats: NONE
+        Map 6 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart
+                  Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                  Select Operator
+                    expressions: ds (type: string)
+                    outputColumnNames: ds
+                    Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                    Group By Operator
+                      aggregations: max(ds)
+                      mode: hash
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                      Reduce Output Operator
+                        sort order: 
+                        Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                        value expressions: _col0 (type: string)
+        Map 8 
+            Map Operator Tree:
+                TableScan
+                  alias: srcpart
+                  Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                  Select Operator
+                    expressions: ds (type: string)
+                    outputColumnNames: ds
+                    Statistics: Num rows: 1 Data size: 23248 Basic stats: PARTIAL Column stats: NONE
+                    Group By Operator
+                      aggregations: min(ds)
+                      mode: hash
+                      outputColumnNames: _col0
+                      Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                      Reduce Output Operator
+                        sort order: 
+                        Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                        value expressions: _col0 (type: string)
+        Reducer 2 
+            Reduce Operator Tree:
+              Group By Operator
+                keys: KEY._col0 (type: string)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 23248 Basic stats: COMPLETE Column stats: NONE
+                Reduce Output Operator
+                  key expressions: _col0 (type: string)
+                  sort order: +
+                  Map-reduce partition columns: _col0 (type: string)
+                  Statistics: Num rows: 2 Data size: 46496 Basic stats: COMPLETE Column stats: NONE
+        Reducer 3 
+            Reduce Operator Tree:
+              Join Operator
+                condition map:
+                     Left Semi Join 0 to 1
+                keys:
+                  0 _col0 (type: string)
+                  1 _col0 (type: string)
+                outputColumnNames: _col0
+                Statistics: Num rows: 2 Data size: 51145 Basic stats: COMPLETE Column stats: NONE
+                File Output Operator
+                  compressed: false
+                  Statistics: Num rows: 2 Data size: 51145 Basic stats: COMPLETE Column stats: NONE
+                  table:
+                      input format: org.apache.hadoop.mapred.SequenceFileInputFormat
+                      output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat
+                      serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+        Reducer 7 
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: max(VALUE._col0)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                Filter Operator
+                  predicate: _col0 is not null (type: boolean)
+                  Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                  Group By Operator
+                    keys: _col0 (type: string)
+                    mode: hash
+                    outputColumnNames: _col0
+                    Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                    Reduce Output Operator
+                      key expressions: _col0 (type: string)
+                      sort order: +
+                      Map-reduce partition columns: _col0 (type: string)
+                      Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+        Reducer 9 
+            Reduce Operator Tree:
+              Group By Operator
+                aggregations: min(VALUE._col0)
+                mode: mergepartial
+                outputColumnNames: _col0
+                Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                Filter Operator
+                  predicate: _col0 is not null (type: boolean)
+                  Statistics: Num rows: 1 Data size: 184 Basic stats: COMPLETE Column stats: NONE
+                  Group By Operator
+                    keys: _col0 (type: string)
+                    mode: hash
+                    outputColumnNames: _col0
+                    Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+                    Reduce Output Operator
+                      key expressions: _col0 (type: string)
+                      sort order: +
+                      Map-reduce partition columns: _col0 (type: string)
+                      Statistics: Num rows: 2 Data size: 368 Basic stats: COMPLETE Column stats: NONE
+
+  Stage: Stage-0
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+        ListSink
+
+
