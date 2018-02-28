@@ -26,11 +26,11 @@
   </property>
   <property>
     <name>mapreduce.jobhistory.address</name>
-    <value>master_hostname:10020</value>
+    <value>$master_hostname:10020</value>
   </property>
   <property>
     <name>mapreduce.jobhistory.webapp.address</name>
-    <value>master_hostname:19888</value>
+    <value>$master_hostname:19888</value>
   </property>
   <property>
     <name>yarn.nodemanager.vmem-pmem-ratio</name>

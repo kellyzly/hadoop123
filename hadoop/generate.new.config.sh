@@ -8,7 +8,8 @@ do
  value=`echo $keyvalue |cut -d"=" -f2`
  echo $file $key $value
  newKey='$'$key
- sed -i "s|$newKey|$value|g" $file
+ template_file=$file.template
+ sed -i ".bak" "s|$newKey|$value|g" $template_file
 done
 }
 
@@ -19,7 +20,7 @@ lable_hostname=`head -n 1 $config_file| cut -d"=" -f1`
 if [ "$lable_hostname" == "master_hostname" ];then
     hostname=`head -n 1 $config_file|cut -d"=" -f2`
     echo "here $hostname"
-    find ./ -name "*.template" |xargs sed  -i "s/\$master_hostname/$hostname/g"
+    find ./ -name "*.template" |xargs sed  -i  ".bak" "s/\$master_hostname/$hostname/g"
 fi
 
 }
@@ -32,12 +33,14 @@ cp $config_file new_config/;
 cd new_config;
 # ex. modify $master_hostname sr603
 modify_hostname
-# remove template suffix, for example, mv core-site.xml.template  core-site.xml
-for file in *.template; do
-   mv "$file" "$(basename "$file" .template)"
-done
 # modify template according to config_file
 modify_template
+# remove template suffix, for example, mv core-site.xml.template  core-site.xml
+
+for file in *.template; do
+   newfile=$(basename "$file" .template)
+   mv "$file" "$(basename "$file" .template)"
+done
 cd  -;
 }
 
